@@ -45,7 +45,7 @@ function App() {
         <ProgressBar val={response['tired']} name={'tired'}/>
         </div>
         <p>
-          It's <time dateTime={process.env.REACT_APP_API_URL}>{process.env.REACT_APP_API_URL}</time>
+          Оно не умирает, но и не живет, а просто существует.
         </p>
       </header>
     </div>
