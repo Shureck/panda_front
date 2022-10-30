@@ -5,9 +5,9 @@ import ProgressBar from './new_elements/Progressbar/progressbar.js';
 import './App.css';
 import { io } from "socket.io-client";
 
-const ENDPOINT = "http://localhost:8060";
+const ENDPOINT = process.env.HOST_ADR || "localhost:8060";
 
-const socket = io("localhost:8060", {
+const socket = io(ENDPOINT, {
   path: "/ws/socket.io",
   transports: ["websocket"]
 });
