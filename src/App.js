@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Pic from '../new_elements/Pic/pic.js';
+import Pic from './new_elements/Pic/pic.js';
 import Buttons from "./new_elements/Buttons/buttons.js";
-import ProgressBar from '../new_elements/Progressbar/progressbar.js';
+import ProgressBar from './new_elements/Progressbar/progressbar.js';
 import './App.css';
 import { io } from "socket.io-client";
 
