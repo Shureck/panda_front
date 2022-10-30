@@ -5,7 +5,7 @@ import ProgressBar from './new_elements/Progressbar/progressbar.js';
 import './App.css';
 import { io } from "socket.io-client";
 
-const ENDPOINT = window._env_.API_URL || "localhost:8060";
+const ENDPOINT = process.env.REACT_APP_API_URL || "localhost:8060";
 
 const socket = io(ENDPOINT, {
   path: "/ws/socket.io",
@@ -45,7 +45,7 @@ function App() {
         <ProgressBar val={response['tired']} name={'tired'}/>
         </div>
         <p>
-          It's <time dateTime={response['food']}>{response['food']}</time>
+          It's <time dateTime={process.env.REACT_APP_API_URL}>{process.env.REACT_APP_API_URL}</time>
         </p>
       </header>
     </div>

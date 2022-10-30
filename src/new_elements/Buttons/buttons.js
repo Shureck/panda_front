@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect, useCallback}  from 'react';
 import './buttons.css';
 
-const ENDPOINT = window._env_.API_URL || "localhost:8060";
+const ENDPOINT = process.env.REACT_APP_API_URL || "localhost:8060";
 
 function Buttons(props) {
 
