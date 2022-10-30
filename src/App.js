@@ -8,7 +8,7 @@ import { io } from "socket.io-client";
 const ENDPOINT = process.env.REACT_APP_API_URL || "localhost:8060";
 
 const socket = io(ENDPOINT, {
-  path: "/ws/socket.io",
+  path: "/api/ws/socket.io",
   transports: ["websocket"]
 });
 

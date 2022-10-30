@@ -6,7 +6,7 @@ const ENDPOINT = process.env.REACT_APP_API_URL || "localhost:8060";
 function Buttons(props) {
 
     const fetchRequest = useCallback(() => {
-        fetch('http://'+ENDPOINT+'/button?text='+props.name);
+        fetch('http://'+ENDPOINT+'/api/button?text='+props.name);
     });
 
   return (
